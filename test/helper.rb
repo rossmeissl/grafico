@@ -10,6 +10,9 @@ require 'action_view'
 require 'action_controller'
 
 class Test::Unit::TestCase
+  def wrap_as_javascript(javascript)
+    "<script type=\"text/javascript\">\n//<![CDATA[\n#{javascript}\n//]]>\n</script>"
+  end
 end
 
 class TestHelper
