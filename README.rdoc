@@ -1,16 +1,15 @@
 = grafico
 
-Description goes here.
+Rails (2.x - 3.x) view helpers for graphs using {Grafico}[http://grafico.kilianvalkhof.com/], a javascript graphic library built on {Raphael}[http://raphaeljs.com/].
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+== Installation
+
+* Add the gem to your Rails app, either through an initializer (Rails 2.x with rake gems:install) or its Gemfile (Rails 3 with bundle install).
+* Use the grafico_assets generator to add the necessary javascript libraries to your app.  
+
+== Acknowledgements
+
+Inspired by {reportable}[http://github.com/saulabs/reportable].
 
 == Copyright
 
