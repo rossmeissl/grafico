@@ -1,7 +1,11 @@
 require 'helper'
 
 class TestGrafico < Test::Unit::TestCase
-  def test_something_for_real
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  def setup
+    @helper = TestHelper.new
+  end
+  
+  def test_setup
+    assert_instance_of TestHelper, @helper
   end
 end

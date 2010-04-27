@@ -7,3 +7,6 @@ require 'grafico'
 
 class Test::Unit::TestCase
 end
+
+class TestHelper
+end

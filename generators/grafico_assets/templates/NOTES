@@ -1,0 +1,7 @@
+[grafico] Grafico assets have been installed in public/javascripts.
+[grafico] Please ensure the following is present your application layout:
+
+  javascript_include_tag :defaults # or, at least, 'prototype'
+  javascript_include_tag 'raphael', 'grafico'
+
+[grafico] Thanks.
