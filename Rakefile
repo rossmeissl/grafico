@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "grafico"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Rails view helpers for the Grafico javascript graphing library}
+    gem.description = %Q{Rails (2.x - 3.x) view helpers for graphs using Grafico, a javascript graphic library built on Raphael.}
     gem.email = "andy@brighterplanet.com"
     gem.homepage = "http://github.com/rossmeissl/grafico"
     gem.authors = ["Andy Rossmeissl"]
