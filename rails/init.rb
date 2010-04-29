@@ -1,5 +1,5 @@
 require 'grafico'
-require 'grafico/helper'
+require 'grafico/helpers'
 
 ActionView::Base.class_eval do
   include Grafico::Helper
