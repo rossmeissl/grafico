@@ -16,4 +16,8 @@ class TestGrafico < Test::Unit::TestCase
   def test_line_graph_tag
     assert_equal @helper.line_graph_tag('my_element', [1, 2, 3]), wrap_as_javascript("var my_elementLineGraph = new Grafico.LineGraph($('my_element'), [1,2,3]);")
   end
+
+  def test_sparkline_tag
+    assert_equal @helper.line_graph_tag('my_element', [1, 2, 3]), wrap_as_javascript("var my_elementSparkLine = new Grafico.SparkLine($('my_element'), [1,2,3]);")
+  end
 end

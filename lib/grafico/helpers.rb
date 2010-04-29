@@ -10,5 +10,9 @@ module Grafico
     def line_graph_tag(element, data, options = {})
       graph_tag 'LineGraph', element, data, options
     end
+
+    def sparkline_tag(element, data, options = {})
+      graph_tag 'SparkLine', element, data, options
+    end
   end
 end
