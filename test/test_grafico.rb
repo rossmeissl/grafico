@@ -13,11 +13,9 @@ class TestGrafico < Test::Unit::TestCase
     assert_equal @helper.graph_tag('FooGraph', 'my_element', [1, 2, 3]), wrap_as_javascript("var my_elementFooGraph = new Grafico.FooGraph($('my_element'), [1,2,3]);")
   end
 
-  def test_line_graph_tag
-    assert_equal @helper.line_graph_tag('my_element', [1, 2, 3]), wrap_as_javascript("var my_elementLineGraph = new Grafico.LineGraph($('my_element'), [1,2,3]);")
-  end
-
-  def test_sparkline_tag
-    assert_equal @helper.line_graph_tag('my_element', [1, 2, 3]), wrap_as_javascript("var my_elementSparkLine = new Grafico.SparkLine($('my_element'), [1,2,3]);")
+  def test_graph_types
+    Grafico::Helpers::GRAPH_TYPES.each do |type|
+      assert_equal @helper.send(:"#{type.underscore}_tag", 'my_element', [1, 2, 3]), wrap_as_javascript("var my_element#{type} = new Grafico.#{type}($('my_element'), [1,2,3]);")
+    end
   end
 end
