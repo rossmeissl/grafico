@@ -11,7 +11,7 @@ module Grafico
     end
 
     generators do
-      require File.join(GEM_ROOT, 'generators', 'grafico_assets_generator')
+      require File.join(GEM_ROOT, 'generators', 'grafico_assets', 'grafico_assets_generator')
     end
 
   end
